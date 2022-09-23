@@ -7,4 +7,20 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="DbConfigLib">
+        <HintPath>..\..\DbConfig\DbConfigLib\dist\DbConfigLib.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="db.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
